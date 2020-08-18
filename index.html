@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto GifOS</title>
+    <link rel=StyleSheet href="Styles/styles.css" TYPE="text/css" MEDIA=screen>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <main>
+      <nav>
+        <a href="index.html"><img src="assets/gifOF_logo.png" alt = "logo de GIFOS" id="logo"/></a>
+        <button id="crearGuifos" onclick="location.href='misguifos.html'">Crear Guifos</button>
+        <div class="modos">
+          <select>
+            <option value="0">Elegir tema</option>
+            <option value="1">Modo claro</option>
+            <option value="2">Modo oscuro</option>
+          </select>
+        </div>
+        <div id="misGuifos"><a href="misguifos.html" id="misGuifosTexto"><u>M</u>is Guifos</a></div>
+      </nav>
+
+        <div class="buscar_up"><p><strong>Buscar</strong></p></div>
+        <div class="buscar_down">
+          <form autocomplete="off">
+            <input id="search" type="search" autocomplete="off" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"/>
+            <div class="btnHolder1"><button id="btnSearch"><img src="assets/lupa_inactive.svg" alt="lupa" id="lupa"/>Buscar</button></div>
+          </form>
+        </div>
+        
+        <section id="sugerencias">
+          <div id="HTS"><h2>Hoy te sugerimos:</h2></div>
+          <div id="GIF1"></div>
+        </section>
+
+        <section id="tendencias">
+          <div id="TD"><h2 id="TDtext">Tendencias:</h2></div>
+          <div id="GIF2"></div>
+        </section>
+        
+        
+      <div class="out"></div>
+     
+    </main>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
